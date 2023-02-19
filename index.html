@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+    <link rel="icon" href="cor.png">
+  </head>
+<style>
+body{background:hsla(174, 100%, 67%, 0.752);
+    margin:0
+}
+.form{
+    width:600px;
+    height:870px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative;
+
+}
+h2{
+    text-align: center;
+    margin:10px 0;
+    padding-bottom:10px;
+    width:540px;
+    color: #000;
+    border-bottom:3px solid #78788c;
+    
+}
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:3px solid #78788c
+}
+
+.b1{
+    color: rgb(167, 39, 39); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c1{
+    color: rgb(82, 101, 95); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c2{
+    color: rgb(78, 84, 79);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;font-size:14px;
+    color:#5a5a5a
+}
+button{
+    background-color: #0d0d0e;
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            float: right;
+}
+
+    button:hover{
+    background:#d186bb;
+    color:#e404ac
+}
+footer{
+    background-color:hotpink;
+    color: azure;
+    text-align: center;
+}
+
+</style>
+<!--action="" method="get" class="form" align-items: rigth    -->
+  <body>
+    <form action="" method="get" class="form">
+        <h2 >Formulario de registro - Mi web</h2>
+        <p type="Nombre:"><input placeholder="Escribe tu nombre..."></input></p>
+        <p type="Apellidos:"><input placeholder="Escribe tus apellidos..."></input></p>
+             <p>
+                <label><br>
+                    <input type="radio" name="genero" value="Hombre"> Hombre    
+                </label>
+             </p>
+             <p>
+                <label>
+                    <input type="radio" name="genero" value="Mujer"> Mujer
+                </label>
+             </p> 
+        <br><br>
+        <br><br>
+        <label class="b1" for= "Poblacion">Poblaci&oacute;n:</label>
+        <select id="Poblacion" name="Poblacion"> 
+            <option value="Orizaba">Orizaba</option>
+            <option value="Cordoba">C&oacute;rdoba</option>
+            <option value="Xalapa">Xalapa</option>
+            <option value="Veracruz">Veracruz</option>
+        </select><br><br>
+        <input type="checkbox"  name="opcioness" value= "rock" checked="checked" >
+        <strong class="c1"  >Deseo recibir informaci&oacute;n sobre novedades y ofertas</strong>
+            <br/>
+            <br>
+        <strong class="c2">Declaro haber le&iacute;do y aceptar las condiciones generales del programa y la normativa sobre protecci&oacute;n de datos</strong>
+        <input  type="checkbox"  name="opcioness" value= " rock">    <br><br><br><br><br><br><br><br><br><br>
+        
+<!--
+
+    span{
+    margin:0 5px 0 15px
+}
+          <span >001 1023 567</span>
+          <span >contact@gmail.com</span> 
+-->
+             <button>Enviar</button>
+       
+    
+  </body>
+</form>  
+<footer>
+    <p>&copy; 2023 Formulario de registro - Mi web</p>
+    <p>
+      Flores Moreno Emir
+    </p>
+  </footer>
+</html>
